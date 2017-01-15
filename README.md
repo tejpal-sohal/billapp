@@ -1,4 +1,4 @@
-#H1 Bill Application 
+## Bill Application 
 
 ## Example
 
@@ -9,10 +9,10 @@
 Download the file and run the following inside the directory
 
 `npm install`
-'npm start'
+`npm start`
 
 For production build run 
 
-'gulp prod'
+`gulp prod`
 
 
