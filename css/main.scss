@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+$font-family-sans-serif: 'Arimo', sans-serif;
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import url('hover.css');
+@import "vars";
+@import "home";
+@import "footer";
+@import "login";
+@import "bill";
+@import "about";
+@import "error";

@@ -1,0 +1,123 @@
+<div class="container bill">
+    <div class="page-header">
+        <img src="../img/Sky_Logo.png" class="img-responsive">
+        <h1>Bills & Payment</h1>
+        <small>Lastest Bill generated on <span>{{generated}}</span></small>
+    </div>
+
+    <div class="text-right">
+        <small>Bill Date From <span>{{from}} - {{to}}</span> </small>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h1>My Subscriptions</h1>
+                </div>
+                <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <table class="table">
+                                    <thead>
+                                        <th>Type</th>
+                                        <th>Name</th>
+                                        <th>Cost</th>
+                                    </thead>
+                                    <tbody>
+                                    <tr ng-repeat="sub in subs">
+                                        <td>{{sub.type}}</td>
+                                        <td>{{sub.name}}</td>
+                                        <td>{{sub.cost | currency: "£ "}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="total">Total</td>
+                                        <td class="total">{{subsTotal  | currency: "£ "}}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                </div>
+                <div class="panel-heading">
+                    <h1>My Phone</h1> <label>Search Called Number: <input ng-model="phoneSearch"></label>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                           <table class="table">
+                               <thead>
+                                   <th>Called</th>
+                                   <th>Duration</th>
+                                   <th>Cost</th>
+                               </thead>
+                               <tbody>
+                               <tr ng-repeat="call in calls | filter:phoneSearch">
+                                   <td>{{call.called}}</td>
+                                   <td>{{call.duration}}</td>
+                                   <td>{{call.cost | currency: "£ "}}</td>
+                               </tr>
+                               <tr>
+                                   <td class="total">Total</td>
+                                   <td class="total">10:74:07</td>
+                                   <td class="total">{{callsTotal | currency: "£ "}}</td>
+                               </tr>
+                               <tbody>
+                           </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-heading">
+                    <h1>Sky Store Rental</h1>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <table class="table">
+                                <thead>
+                                    <th>Title</th>
+                                    <th>Cost</th>
+                                </thead>
+                                <tbody>
+                                <tr ng-repeat="rent in rentals">
+                                    <td >{{rent.title}}</td>
+                                    <td>{{rent.cost | currency: "£ "}}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-heading">
+                    <h1>Sky Store Buy and Keep</h1>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <table class="table">
+                                <thead>
+                                    <th>Title</th>
+                                    <th>Cost</th>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="buy in buyAndKeep">
+                                        <td>{{buy.title}}</td>
+                                        <td>{{buy.cost | currency: "£ "}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="total">Total</td>
+                                        <td class="total">{{skyStoreTotal | currency: "£ "}}*</td>
+                                    </tr>
+                                    <tr>
+                                        <td><small>*total includes the rental and buy to keep</small></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

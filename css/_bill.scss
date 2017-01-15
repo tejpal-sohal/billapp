@@ -1,0 +1,35 @@
+.bill {
+
+  img{
+    max-width: 100px;
+  }
+
+  h1{
+    font-weight: bold;
+  }
+  small{
+    font-weight: lighter;
+    span {
+      font-size: 25px;
+    }
+  }
+
+  .total {
+    font-size: 25px;
+  }
+  .table > tbody > tr > td{
+    border: none !important;
+    border-top: none;
+    width:40%;
+  }
+  .table > tbody > tr > th{
+    border: none !important;
+  }
+
+  .table > thead > tr > th {
+    border-bottom: 1px solid #ddd;
+    font-weight: 800;
+    font-size: 25px;
+
+  }
+}

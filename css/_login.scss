@@ -1,0 +1,22 @@
+.submitted .ng-invalid{
+  border: 1px solid #ff0000;
+}
+
+.login {
+    form {
+      input {
+        margin: 10px 0px;
+        border-radius: 0px;
+      }
+    }
+    img.skyLogoColor {
+        max-width: 97px
+      }
+  .error-mess {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff0000;
+  }
+}

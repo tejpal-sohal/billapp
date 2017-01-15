@@ -1,0 +1,38 @@
+<div class="container login">
+<div class="page-header">
+    <div class="row">
+        <div class="col-xs-6 hidden-xs">
+            <img class="img-responsive skyLogoColor" src="../img/Sky_Logo.png"  alt="skylogo">
+            <!--<h1 class="">Customer Login</h1>-->
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <h1>Customer Login</h1>
+        </div>
+    </div>
+</div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6  hidden-xs ">
+            <div class="thumbnail">
+                <img src="../img/skysports.jpg"  alt="skysports">
+                <div class="caption">
+                    <h3>Sky Sports Today</h3>
+                    <p>All the news from the Premier League and beyond. Plus, a comprehensive round-up of the day's other sports news. Text your views to 84408 (texts cost 25p, plus standard SMS network charge).</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Get it now</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 center-block ">
+        <form class="form-signin" ng-class="{'submitted': submitted}">
+            <h3 class="form-signin-heading">Please sign in</h3>
+            <label for="inputName" class="sr-only">Email address</label>
+            <input ng-model="user.name" type="name" id="inputName" class="form-control" placeholder="User Name" required autofocus>
+            <label  for="inputPassword" class="sr-only">Password</label>
+            <input ng-model="user.password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+            <button class="btn btn-primary btn-block" type="submit" ng-click="loginUser(); submitted= true;">Sign in</button>
+        </form>
+
+            <div class="error-mess"> {{message}} </div>
+        </div>
+    </div>
+</div>
