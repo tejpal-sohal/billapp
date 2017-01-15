@@ -5922,12 +5922,24 @@ body {
   max-width: 100px; }
 .bill h1 {
   font-weight: bold; }
+  @media screen and (max-width: 320px) {
+    .bill h1 {
+      font-weight: normal;
+      font-size: 18px; } }
 .bill small {
   font-weight: lighter; }
   .bill small span {
     font-size: 25px; }
+    @media screen and (max-width: 320px) {
+      .bill small span {
+        font-weight: bold;
+        font-size: 10px; } }
 .bill .total {
   font-size: 25px; }
+  @media screen and (max-width: 320px) {
+    .bill .total {
+      font-weight: bold;
+      font-size: 16px; } }
 .bill .table > tbody > tr > td {
   border: none !important;
   border-top: none;
@@ -5938,6 +5950,10 @@ body {
   border-bottom: 1px solid #ddd;
   font-weight: 800;
   font-size: 25px; }
+  @media screen and (max-width: 320px) {
+    .bill .table > thead > tr > th {
+      font-weight: bold;
+      font-size: 16px; } }
 
 .about img.skyLogoColor {
   max-width: 97px; }
